@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlugaCar - Locadora de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AlugaCar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#carros">Carros</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo à AlugaCar</h2>
+            <p>Seu destino para aluguéis de carros rápidos, fáceis e acessíveis.</p>
+            <a href="#carros" class="btn">Veja Nossos Carros</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A AlugaCar oferece uma ampla variedade de veículos para atender todas as suas necessidades de transporte. Com preços competitivos e serviço de alta qualidade, garantimos a melhor experiência de aluguel de carros.</p>
+        </div>
+    </section>
+
+    <section id="carros" class="car-list">
+        <div class="container">
+            <h2>Nossos Carros</h2>
+            <div class="car-item">
+                <img src="img/compacto.png" alt="Carro 1">
+                <h3>Carro Compacto</h3>
+                <p>R$ 99,00 por dia</p>
+                <button class="btn">Alugar</button>
+            </div>
+            <div class="car-item">
+                <img src="img/sedan.jpg" alt="Carro 2">
+                <h3>Sedan</h3>
+                <p>R$ 149,00 por dia</p>
+                <button class="btn">Alugar</button>
+            </div>
+            <div class="car-item">
+                <img src="img/suv.jpg" alt="Carro 3">
+                <h3>SUV</h3>
+                <p>R$ 199,00 por dia</p>
+                <button class="btn">Alugar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para saber mais sobre nossos serviços e ofertas.</p>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AlugaCar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
