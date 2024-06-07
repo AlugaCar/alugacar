@@ -169,14 +169,6 @@ footer p {
 }
 
 #transform {
-    width: 500px;
+    width: 450px;
 }
 
-.car-item img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.car-item.central {
-    width: 500px;
-}
