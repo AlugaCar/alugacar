@@ -163,3 +163,20 @@ footer {
 footer p {
     margin: 0;
 }
+
+.tran {
+    opacity: 0.5;
+}
+
+#transform {
+    width: 500px;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.car-item.central {
+    width: 500px;
+}
