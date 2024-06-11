@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function() {
     const container = document.querySelector('.car-list .container');
     const carItems = Array.from(document.querySelectorAll('.car-item'));
@@ -40,3 +41,5 @@ function abrirModal() {
         }
     })
 }
+=======
+>>>>>>> 2eab00b9cebd612080b2de3126c14907a0742f99
