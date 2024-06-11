@@ -92,6 +92,7 @@ nav ul li:hover .dropdown {
     text-decoration: none;
     margin-top: 1rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .about, .car-list, .contact {
@@ -179,4 +180,80 @@ footer p {
 
 .car-item.central {
     width: 500px;
+}
+
+.car-item > img {
+    cursor: pointer;
+}
+
+.janela-modal {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #a1a1a160;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela-modal.abrir {
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal {
+    animation: abrirmodal 0.5s;
+}
+
+.alugar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal > img {
+    height: 500px;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 20px;
 }
