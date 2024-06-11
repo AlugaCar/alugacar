@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="http://localhost/alugacar/views/css/styles.css">
-    <script src="http://localhost/alugacar/views/js/index.js" defer></script>
-    <script src="http://localhost/alugacar/views/js/login.js" defer></script>
+    <script src="https://kit.fontawesome.com/dda272e1ce.js" crossorigin="anonymous"></script>
+    <script src="http://localhost/alugacar/views/index.js" defer></script>
+    <script src="http://localhost/alugacar/views/login.js" defer></script>
 
     <meta name="google-signin-scope" content="profile email">
 	<meta name="google-signin-client_id" content="820987660285-90q0hopqam0tdtn62ngkeadqgmjpfmco.apps.googleusercontent.com">
