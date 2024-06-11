@@ -32,40 +32,50 @@
 
     <section id="home" class="hero">
         <h2>Bem-vindo à AlugaCar</h2>
-        <div class="container">
-            <p>Seu destino para aluguéis de carros rápidos, fáceis e acessíveis.</p>
-            <a href="#carros" class="btn">Veja Nossos Carros</a>
-        </div>
+        <p id="t">Seu destino para aluguéis de carros rápidos, fáceis e acessíveis.</p>
+        
     </section>
     
     <section id="carros" class="car-list">
+        <div class="janela-modal" id="janela-modal">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <img src="./img/sedan.jpg" alt="">
+                <div class="alugar">
+                    <h3>Yaris Sedan</h3>
+                    <p>R$ 149,00 por dia</p>
+                    <p>Marca: Toyota</p>
+                    <p>Modelo: XL</p>
+                    <p>Ano: 2025</p>
+                    <button class="btn">Alugar</button>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="car-item">
-                <img src="img/compacto.png" alt="Carro 1">
+                <img src="img/compacto.png" alt="Carro 1" onclick="abrirModal()">
                 <h3>Mobi Like</h3>
-            <!--<p>Marca: FIAT</p>
-                <p>Modelo: 1.0</p>
-                <p>Ano: 2025</p> -->
-                <p>R$ 99,00 por dia</p>
-                <button class="btn">Alugar</button>
-            </div>
+                    <p><b>R$</b> 99,00 por dia</p>
+                    <p>Marca: FIAT, Modelo: 1.0. Ano: 2025</p>
+                    <button class="btn" onclick="abrirModal()">Alugar</button>
+                </div>
             <div class="car-item" id="transform">
-                <img src="img/sedan.jpg" alt="Carro 2">
+                <img src="img/sedan.jpg" alt="Carro 2" onclick="abrirModal()">
+                
                 <h3>Yaris Sedan</h3>
-            <!--<p>Marca: Toyota</p>
-                <p>Modelo: XL</p>
-                <p>Ano: 2025</p> -->
-                <p>R$ 149,00 por dia</p>
-                <button class="btn">Alugar</button>
-            </div>
+                
+                    <p><b>R$</b> 149,00 por dia</p>
+                    <p>Marca: Toyota, Modelo: XL. Ano: 2025</p>
+                
+                    <button class="btn" onclick="abrirModal()">Alugar</button>
+                
+                </div>
             <div class="car-item">
-                <img src="img/suv.jpg" alt="Carro 3">
+                <img src="img/suv.jpg" alt="Carro 3" onclick="abrirModal()">
                 <h3>SUV Taos</h3>
-            <!--<p>Marca: Volkswagen</p>
-                <p>Modelo: Highline 250 tsi</p>
-                <p>Ano: 2024</p> -->
-                <p>R$ 199,00 por dia</p>
-                <button class="btn">Alugar</button>
+                    <p><b>R$</b> 199,00 por dia</p>
+                    <p>Marca: Volkswagen, Modelo: Highline 250 tsi. Ano: 2024</p>
+                <button class="btn" onclick="abrirModal()">Alugar</button>
             </div>
         </div>
     </section>
