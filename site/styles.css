@@ -284,3 +284,94 @@ footer p {
     border: 2px solid black;
     border-radius: 20px;
 }
+
+
+/* Tela de Login */
+
+.containerl {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.containerl > h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.login > label {
+    font-size: 20px;
+}
+
+.login > input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.containerl > button {
+    cursor: pointer;
+    width: 125px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #0044cc;
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+.containerl > button:hover {
+   background-color: #6699ff;
+}
+
+.containerl > p > a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.containerl > p > a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #00A9FF, #89CFF3, #A0E9FF, #CDF5FD);
+    background-size: 300%, 300%;
+    animation: colors 30s ease infinite;
+    backdrop-filter: blur(10px);
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+    
+    100% {
+        background-position: 0% 50%;
+    }
+}
