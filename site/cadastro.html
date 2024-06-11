@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="./script.js"></script>
+    </head>
+    <body class="gradient">
+        <div class="containerc">
+            <h1>Cadastro</h1>
+            <div class="cadastro">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="user" id="user" required>
+                <br>
+                <label for="senha">Senha:</label>
+                <input type="password" name="pwd" id="pwd" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="m" checked>Masculino
+                <input type="radio" name="sexo" id="f">Feminino
+                <br><br>
+                <label for="cpf">Cpf ou Cnpj:</label>
+                <input type="text" name="cpf" id="cpf" required>
+                <br>
+                <label for="datan">Data de Nascimento:</label>
+                <input type="date" name="datan" id="datan">
+                <br>
+            </div>
+            <button>Cadastrar</button>
+            <br>
+            <p><a href="./login.html">Já possuo cadastro</a></p>
+        </div>
+    </body>
+</html>
