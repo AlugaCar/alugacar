@@ -166,8 +166,27 @@ nav > ul > li > a:hover {
     border-radius: 10px;
     color: white;
 }
+/* SOBRE */
+
+.about {
+    background-color: #6699ff;
+}
 
 /* CONTATO */
+
+.contact {
+    background-color: #f4f4f9;
+}
+
+.containerf {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -374,4 +393,69 @@ footer p {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* CADASTRO */
+
+.containerc {
+    width: 600px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.containerc > h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.containerc > button {
+    cursor: pointer;
+    width: 125px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #0044cc;
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+.containerc > button:hover {
+    background-color: #6699ff;
+ }
+ 
+ .containerc > p > a {
+     color: #a0a0a0;
+     text-decoration: none;
+ }
+ 
+ .containerc > p > a:hover {
+     color: #000;
+     text-decoration: underline;
+ }
+
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro > label {
+    font-size: 20px;
+}
+
+.cadastro > input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
