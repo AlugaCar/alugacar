@@ -144,17 +144,17 @@ CREATE TABLE `carro` (
 
 insert  into `carro`(`id_carro`,`descritivo`,`marca`,`modelo`,`img`,`preco_dia`,`id_locacao`) values 
 (1,'carro de passeio','Volkswagen','Gol','sedan.jpg',50.00,1),
-(2,'carro de passeio','Hundai','HB20','sedan.jpg',50.00,2),
-(3,'carro de passeio','Chevrolet','Onix','sedan.jpg',50.00,1),
+(2,'carro de passeio','Hundai','HB20','suv.jpg',50.00,2),
+(3,'carro de passeio','Chevrolet','Onix','compacto.png',50.00,1),
 (4,'carro de passeio','Fiat','Mobi','sedan.jpg',50.00,2),
-(5,'carro de viagem','Volkswagen','Gol','sedan.jpg',50.00,1),
-(6,'carro de viagem','Hundai','HB20','sedan.jpg',50.00,2),
+(5,'carro de viagem','Volkswagen','Gol','suv.jpg',50.00,1),
+(6,'carro de viagem','Hundai','HB20','compacto.png',50.00,2),
 (7,'carro de viagem','Chevrolet','Onix','sedan.jpg',50.00,1),
-(8,'carro de viagem','Fiat','Mobi','sedan.jpg',50.00,2),
-(9,'carro para um dia','Volkswagen','Gol','sedan.jpg',50.00,1),
+(8,'carro de viagem','Fiat','Mobi','suv.jpg',50.00,2),
+(9,'carro para um dia','Volkswagen','Gol','compacto.png',50.00,1),
 (10,'carro para um dia','Hundai','HB20','sedan.jpg',50.00,2),
-(11,'carro para um dia','Chevrolet','Onix','sedan.jpg',50.00,1),
-(12,'carro para um dia','Fiat','Mobi','sedan.jpg',50.00,2);
+(11,'carro para um dia','Chevrolet','Onix','suv.jpg',50.00,1),
+(12,'carro para um dia','Fiat','Mobi','compacto.png',50.00,2);
 
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

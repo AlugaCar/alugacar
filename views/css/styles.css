@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*ROOTS*/
+:root {
+    --cor-primaria: #0044ca; /* Azul */
+    --cor-secundaria: #ffffff; /* Branco */
+    --cor-terciaria: #ee7f18;
+    --cor-texto: #212121;
+    --cor-fundo: #F4F4F4;
+}
+
+/*PADRÔES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-bg-fundo);
+    color: var(--cor-texto);
+}
+    
+.img_produto {
+width: 100% !important;
+}
+#header{
+    background-color: var(--cor-primaria)!important;
+    height: 100px;
+}
+.logo{
+    height: 90px !important;
+}
+.btn-custom-blue {
+    background-color: var(--cor-primaria) !important;
+    color: white !important;
+}
+
+.btn-custom-blue:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+}
