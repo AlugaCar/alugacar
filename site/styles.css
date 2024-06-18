@@ -140,10 +140,6 @@ nav > ul > li > a:hover {
     border-radius: 10px;
 }
 
-.tran {
-    opacity: 0.5;
-}
-
 #transform {
     width: 500px;
 }
@@ -170,6 +166,7 @@ nav > ul > li > a:hover {
 
 .about {
     background-color: #6699ff;
+    color: white;
 }
 
 /* CONTATO */
