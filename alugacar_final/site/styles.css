@@ -1,0 +1,286 @@
+/* Outros */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HEADER */
+
+header {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 0rem 0;
+    width: 100%;
+    height: 120px;
+}
+
+.logo img {
+    max-width: 135px;
+    margin-top: 10px;
+}
+
+/* NAV */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #0044cc;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li .dropdown li a {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav > ul > li > a:hover {
+    font-size: 22px;
+    color: #0044cc;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* HOME */
+
+.hero {
+    height: 75px;
+    background-color: #6699ff;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0044cc;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* CARROS */
+.about, .car-list, .contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.car-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.car-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tran {
+    opacity: 0.5;
+}
+
+#transform {
+    width: 500px;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.car-item.central {
+    width: 500px;
+}
+
+.car-item > img {
+    cursor: pointer;
+}
+
+.car-item > h3 {
+    background-color: #6699ff;
+    border-radius: 10px;
+    color: white;
+}
+
+/* CONTATO */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem 2rem;
+    background-color: #0044cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003399;
+}
+/* FOOTER */
+footer {
+    background-color: #0044cc;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* MODAL */
+
+.janela-modal {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #a1a1a160;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela-modal.abrir {
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal {
+    animation: abrirmodal 0.5s;
+}
+
+.alugar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal > img {
+    height: 500px;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 20px;
+}

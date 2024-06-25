@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlugaCar - Locadora de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logooo.jpg" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#carros">Carros</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Compactos</a></li>
+                            <li><a href="#">Sedans</a></li>
+                            <li><a href="#">SUVs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Bem-vindo à AlugaCar</h2>
+        <p id="t">Seu destino para aluguéis de carros rápidos, fáceis e acessíveis.</p>
+        
+    </section>
+    
+    <section id="carros" class="car-list">
+        <div class="janela-modal" id="janela-modal">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <img src="./img/sedan.jpg" alt="">
+                <div class="alugar">
+                    <h3>Yaris Sedan</h3>
+                    <p>R$ 149,00 por dia</p>
+                    <p>Marca: Toyota</p>
+                    <p>Modelo: XL</p>
+                    <p>Ano: 2025</p>
+                    <button class="btn">Alugar</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="car-item">
+                <img src="img/compacto.png" alt="Carro 1" onclick="abrirModal()">
+                <h3>Mobi Like</h3>
+                    <p><b>R$</b> 99,00 por dia</p>
+                    <p>Marca: FIAT, Modelo: 1.0. Ano: 2025</p>
+                    <button class="btn" onclick="abrirModal()">Alugar</button>
+                </div>
+            <div class="car-item" id="transform">
+                <img src="img/sedan.jpg" alt="Carro 2" onclick="abrirModal()">
+                
+                <h3>Yaris Sedan</h3>
+                
+                    <p><b>R$</b> 149,00 por dia</p>
+                    <p>Marca: Toyota, Modelo: XL. Ano: 2025</p>
+                
+                    <button class="btn" onclick="abrirModal()">Alugar</button>
+                
+                </div>
+            <div class="car-item">
+                <img src="img/suv.jpg" alt="Carro 3" onclick="abrirModal()">
+                <h3>SUV Taos</h3>
+                    <p><b>R$</b> 199,00 por dia</p>
+                    <p>Marca: Volkswagen, Modelo: Highline 250 tsi. Ano: 2024</p>
+                <button class="btn" onclick="abrirModal()">Alugar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <h2>Sobre Nós</h2>
+        <div class="container">
+            <p>A AlugaCar oferece uma ampla variedade de veículos para atender todas as suas necessidades de transporte. Com preços competitivos e serviço de alta qualidade, garantimos a melhor experiência de aluguel de carros.</p>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <div class="container">
+            <p>Entre em contato conosco para saber mais sobre nossos serviços e ofertas.</p>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AlugaCar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
